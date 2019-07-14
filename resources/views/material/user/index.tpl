@@ -247,7 +247,7 @@
                                                 <p><span class="icon icon-lg text-white">filter_4</span>
                                                     右键任务栏小飞机，系统代理模式，选择<code>全局模式</code>，服务器，编辑服务器，删除<code>Free</code>字样线路，点击<code>确定</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_5</span>
-                                                    右键任务栏小飞机，服务器连接统计，选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示），访问 <a href="https://www.google.com" target="_blank">Google</a>（若 <code>延迟</code>无数字显示且均为<code>错误/超时/空连</code>，选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>），能正常访问即可</p>
+                                                    右键任务栏小飞机，服务器连接统计，选择一个 <code>Group</code> 为 <code>{$config["appName"]}</code>的节点（非流量提示以及到期日期提示），访问 <a href="https://www.google.com" target="_blank">Google</a>（若 <code>延迟</code>无数字显示且均为<code>错误/超时/空连</code>，选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>），能正常访问即可</p>
                                                 <p><span class="icon icon-lg text-white">filter_6</span>
                                                     右键任务栏小飞机，PAC，更新PAC为GFWList，系统代理模式，选择<code>PAC模式</code></p>
                                                 <div>
@@ -303,7 +303,7 @@
                                                     <a  class="copy-text btn-dl"
                                                         data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
                                                         点击复制订阅地址</a>，点击<code>OK</code>，点击<code>手动更新订阅</code>，更新订阅成功</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>选择<code>PAC自动模式</code>，服务器列表中选择{$config["appName"]}中的一个节点（非流量提示以及到期日期提示），开始起飞</p></p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>选择<code>PAC自动模式</code>，服务器列表中选择<code>{$config["appName"]}</code>中的一个节点（非流量提示以及到期日期提示），开始起飞</p></p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}
                                                     订阅地址：
@@ -346,7 +346,7 @@
                                                     <a  class="copy-text btn-dl"
                                                         data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
                                                         点击复制订阅地址</a></p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>订阅成功后点击“完成”关闭界面，右击托盘纸飞机图标，服务器，{$config["appName"]}
+                                                <p><span class="icon icon-lg text-white">filter_3</span>订阅成功后点击“完成”关闭界面，右击托盘纸飞机图标，服务器，<code>{$config["appName"]}</code>
                                                     ，选择一个节点即可</p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}

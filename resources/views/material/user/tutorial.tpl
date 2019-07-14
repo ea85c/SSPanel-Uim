@@ -91,6 +91,17 @@
                                             <li>访问 <a href="https://www.google.com" target="_blank">Google</a>（若 <code>延迟</code>无数字显示且均为<code>错误/超时/空连</code>，选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>），能正常访问即可</li>
                                         </ol>
                                     </ul>
+                                        <ul>
+                                        <h3>
+                                            <li>体验优化</li>
+                                        </h3>
+                                        <ol>
+                                            <li>右键任务栏小飞机，PAC，更新PAC为GFWList</li>
+                                            <p><img src="/images/Windows_6.png">></img></p>
+                                            <li>系统代理模式，选择<code>PAC模式</code></li>
+                                            <p><img src="/images/Windows_7.png">></img></p>
+                                        </ol>
+                                    </ul>
                                 </div>
 
                                 <div class="tab-pane fade page-course" id="all_ssr_mac">
