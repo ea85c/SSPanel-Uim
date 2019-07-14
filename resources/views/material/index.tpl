@@ -1,10 +1,13 @@
 <!DOCTYPE html>
+{if $config['appName'] == '跑路'}
+<script>window.location.href = '{$config["baseUrl"]}/paolu.html';</script>
+{/if}
 <html class="full-height" lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
-    <title>Laser</title>
+    <title>{$config["appName"]}</title>
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/material-dash.css" rel="stylesheet">
     <link href="/assets/css/animate.min.css" rel="stylesheet">
@@ -337,7 +340,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand  animated swing" href="/">appName</a>
+                <a class="navbar-brand  animated swing" href="/">{$config["appName"]}</a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -460,7 +463,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container-fluid">
-            <p>&copy; <a href="/"></a> 2019 <a href="/" target="_blank">appName</a></p>
+            <p>&copy; <a href="/"></a> 2019 <a href="/" target="_blank">{$config["appName"]}</a></p>
         </div>
     </div>
 </footer>

@@ -177,10 +177,9 @@
                                         <li {if $ssr_prefer}class="active"{/if}>
                                             <a class="" data-toggle="tab" href="#all_ssr"><i class="icon icon-lg">airplanemode_active</i>&nbsp;SSR</a>
                                         </li>
-                                        <li {if !$ssr_prefer}class="active"{/if}>
+                                        <!--<li {if !$ssr_prefer}class="active"{/if}>
                                             <a class="" data-toggle="tab" href="#all_ss"><i class="icon icon-lg">flight_takeoff</i>&nbsp;SS/SSD</a>
-                                        </li>
-
+                                        </li>-->
                                         <li>
                                             <a class="" data-toggle="tab" href="#all_v2ray"><i class="icon icon-lg">flight_land</i>&nbsp;V2RAY</a>
                                         </li>
@@ -196,6 +195,9 @@
                                                     <li class="active">
                                                         <a class="" data-toggle="tab" href="#all_ssr_windows"><i
                                                                     class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="" data-toggle="tab" href="#all_ssr_windows_help"><i class="icon icon-lg">computer</i>&nbsp;Windows Help</a>
                                                     </li>
                                                     <li>
                                                         <a class="" data-toggle="tab" href="#all_ssr_mac"><i
@@ -234,21 +236,18 @@
                                                 {$ssr_url_all_mu = URL::getAllUrl($pre_user, 1, 0)}
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
                                                             class="btn-dl" href="/ssr-download/ssr-win.7z"><i
-                                                                class="material-icons">save_alt</i> 点击下载SSRR</a>解压至任意磁盘并运行
-                                                </p>
+                                                                class="material-icons">save_alt</i> 点击下载SSRR</a>解压至任意磁盘并 <code class="card-tag tag-red">以管理员身份运行</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
-                                                    任务栏右下角右键纸飞机图标->服务器订阅->SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再更新SSR服务器订阅（绕过代理）
-                                                </p>
+                                                    任务栏右下角右键纸飞机图标->选项设置->取消勾选负载均衡，负载均衡选择 <code>选中优先</cpde>，勾选 <code>允许来自局域网的连接</code>，点击 <code>Set Default</code>，DNS设置为 <code>8.8.8.8</code>，Local DNS设置为<code>8.8.4.4</code>，点击 <code>确定</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>
-                                                    然后选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网</p>
+                                                    任务栏右下角右键纸飞机图标->服务器订阅->SSR服务器订阅设置->勾选 <code>自动更新</code>->点击 <code>Add</code>->网址中粘贴订阅链接
+                                                    <a  class="copy-text btn-dl"
+                                                        data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
+                                                        点击复制订阅地址</a>->点击 <code>确定</code>->服务器订阅->更新SSR服务器订阅->提示服务器订阅{$config["appName"]}更新成功</p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>
-                                                    备用导入节点方法：{if $mergeSub!='true'}点击复制{/if}<a class="copy-text btn-dl"
-                                                                                               data-clipboard-text="{$ssr_url_all}"><i
-                                                                class="material-icons icon-sm">how_to_vote</i>{if $mergeSub!='true'}普通端口{else}点击复制{/if}
-                                                        链接</a>{if $mergeSub!='true'}或者<a class="copy-text btn-dl"
-                                                                                         data-clipboard-text="{$ssr_url_all_mu}">
-                                                        <i class="material-icons icon-sm">how_to_vote</i>单端口多用户链接
-                                                    </a>{/if}，然后右键小飞机->从剪贴板复制地址</p>
+                                                    任务栏右下角右键纸飞机图标->系统代理模式->勾选<code>全局模式</code>->服务器->编辑服务器->删除 <code>Free</code> 字样线路，点击<code>确定</code>->服务器连接统计->选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示）->访问 <a href="https://www.google.com" target="_blank">Google</a>->若 <code>延迟</code> 有显示数字，Gooele能正常访问->恭喜可以正常使用->若 <code>延迟</code> 无数字显示->均为 <code>错误/超时/空连</code>->选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>->直到正常访问为止</p>
+                                                 <p><span class="icon icon-lg text-white">filter_5</span>
+                                                    任务栏右下角右键纸飞机图标->PAC->更新PAC为GFWList->系统代理模式->勾选<code>PAC模式</code></p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}
                                                     订阅地址：
@@ -283,18 +282,26 @@
 
                                                 <p><a href="/user/tutorial">点击这里查看Windows教程</a></p>
                                             </div>
+                                            <div class="tab-pane fade" id="all_ssr_windows_help">
+                                                      <p><span class="icon icon-lg text-white">filter_1</span> 下载 软媒魔方（绿色版）&nbsp;<a href="https://d.ruanmei.com/pcmaster/pcmaster_6.21_full.zip" target="_blank">点击下载</a></p>
+                                                      <p><span class="icon icon-lg text-white">filter_2</span> 解压 并 运行&nbsp;softmaster.exe</p>
+                                                      <p><span class="icon icon-lg text-white">filter_3</span>点击 软件卸载，卸载所有 360/2345/百度 的产品<br/></p>
+                                                      <p><span class="icon icon-lg text-white">filter_4</span> 卸载完成后清理卸载残留</p>
+                                                      <p><span class="icon icon-lg text-white">filter_5</span>下载 火绒 并 安装运行&nbsp;<a href="https://www.huorong.cn/downfull4.html?1543492699" target="_blank">点击下载</a><br/></p>
+                                                      <p><span class="icon icon-lg text-white">filter_6</span> 找到 扩展工具，点击 垃圾清理，扫描垃圾 并 清理<br/></p>
+                                                      <p><span class="icon icon-lg text-white">filter_7</span> 重启电脑即可使用</p>
+                                            </div>
                                             <div class="tab-pane fade" id="all_ssr_mac">
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
                                                             href="/ssr-download/ssr-mac.dmg" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i>
-                                                        点击下载ShadowsocksX-NG-R8</a>，安装并启动</p>
+                                                        点击下载ShadowsocksX-NG-R8</a>，安装并启动（如提示不安全，到设置，打开安全与隐私->选择左下角的小锁->输入开机密码->选择任何来源和允许来自任何来源）</p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
-                                                    右击托盘纸飞机图标->服务器->服务器订阅，填入以下订阅地址</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>更新订阅成功后服务器列表即可出现节点，选择一个节点
-                                                </p>
-                                                <p><span class="icon icon-lg text-white">filter_4</span>
-                                                    再次右击托盘纸飞机图标，如果shadowsocks还未打开，则需要点击打开</p>
-
+                                                    右击托盘纸飞机图标->服务器->服务器订阅，填入订阅地址
+                                                    <a  class="copy-text btn-dl"
+                                                        data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
+                                                        点击复制订阅地址</a>->点击 <code>OK</code>->点击 <code>手动更新订阅</code>->更新订阅成功</p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>选择 <code>PAC自动模式</code>->服务器列表中选择{$config["appName"]}中的一个节点（非流量提示以及到期日期提示），开始起飞</p></p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}
                                                     订阅地址：
@@ -415,7 +422,9 @@
                                                     Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Shadowrocket</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
                                                     打开Shadowrocket，点击右上角的 +
-                                                    号，“类型”选择“Subscribe”，点击复制本网页下方的“订阅地址”，粘贴到“URL”中，点击右上角的“完成”</p>
+                                                    号，“类型”选择“Subscribe”->复制订阅地址<a  class="copy-text btn-dl"
+                                                        data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
+                                                        点击复制订阅地址</a>->粘贴到“URL”中，点击右上角的“完成”</p>
                                                 <p>或在 Safari 中点击<a href="javascript:void(0);" class="btn-dl"
                                                                    style="margin-left: 5px;" data-onekeyfor="sub0"><i
                                                                 class="material-icons icon-sm">how_to_vote</i>小火箭一键{if $mergeSub!='true'}普通端口{/if}
@@ -424,8 +433,9 @@
                                                            style="margin-left: 5px;" data-onekeyfor="sub1"><i
                                                                     class="material-icons icon-sm">how_to_vote</i>小火箭一键单端口订阅</a>
                                                     {/if}</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>
-                                                    选择一个节点，打开上方的连接开关即可</p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>点击 <code>设置（位于右下角）</code>->选择 <code>服务器订阅设置</code>->勾选 <code>打开自动更新</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_4</span>
+                                                    点击 <code>延迟检测</code>->选择一个非超时的线路->打开上方的连接开关即可（同意创建VPN）</p>
                                                 <p><span class="icon icon-lg text-white">build</span> 工具二：Quantumult</p>
                                                 <p><span class="icon icon-lg text-white">filter_1</span> 使用共享账户登录 App
                                                     Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Quantumult</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
@@ -481,18 +491,16 @@
                                                                 class="material-icons">save_alt</i> SSR </a> 或 <a
                                                             href="/ssr-download/ssrr-android.apk" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i> SSRR </a> 并安装</p>
-                                                <p><span class="icon icon-lg text-white">filter_2</span>
-                                                    打开App，点击右下角的<span class="icon icon-lg text-white">add</span>号图标</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span> 添加/升级 SSR订阅</p>
-                                                <p><span class="icon icon-lg text-white">filter_4</span>
-                                                    添加订阅地址，输入下方订阅地址后确定</p>
-                                                <p><span class="icon icon-lg text-white">filter_5</span>
-                                                    订阅出现系统自带的与{$config["appName"]}，请把系统自带的无效订阅左滑删除（自带影响订阅更新速度）</p>
-                                                <p><span class="icon icon-lg text-white">filter_6</span> 点击确定并升级</p>
-                                                <p><span class="icon icon-lg text-white">filter_7</span> 点击选择任意节点，
-                                                    路由选择：略过区域网路以及中国大陆</p>
-                                                <p><span class="icon icon-lg text-white">filter_8</span> 点击右上角的纸飞机图标即可连接
-                                                </p>
+                                                <p><span class="icon icon-lg text-white">filter_2</span>打开App，点击左上角的 ShadowsocksR 进入管理后台，点击右下角的<span class="icon icon-lg text-white">add</span>号图标</p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>添加/升级 SSR订阅->添加订阅地址>输入订阅地址后确定<a  class="copy-text btn-dl"
+                                                        data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
+                                                        点击复制订阅地址</a></p>
+                                                <p><span class="icon icon-lg text-white">filter_4</span>订阅出现FreeSSR-public与{$config["appName"]}->右滑删除FreeSSR-public订阅</p>
+                                                <p><span class="icon icon-lg text-white">filter_5</span>勾选 <code>自动更新</code>->点击确定</p>
+                                                <p><span class="icon icon-lg text-white">filter_6</span>点击选择任意节点->返回主界面->路由->选择 <code>略过区域网路以及中国大陆</code> 或 <code>仅代理大陆无法访问地址</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_7</span>若您需要进行游戏加速->打开 <code>UDP转发</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_8</span>点击右上角的纸飞机图标即可连接</p>
+                                                <p><span class="icon icon-lg text-white">filter_</span>小米手机请关闭自带的 迅雷加速 服务，由于本站审计规则会自动匹配迅雷并拦截，开启迅 迅雷加速 会导致不能下载及更新软件 </a>
                                                 <p><span class="icon icon-lg text-white">filter_9</span>
                                                     备用导入节点方法：在手机上默认浏览器中点击<a href="{$ssr_url_all}" class="btn-dl"><i
                                                                 class="material-icons icon-sm">how_to_vote</i>普通端口链接</a>或者<a
@@ -591,11 +599,12 @@
                                             <div class="tab-pane fade" id="all_ssr_game">
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
                                                             href="/ssr-download/SSTap.7z" class="btn-dl"><i
-                                                                class="material-icons">save_alt</i> 点击下载SSTap</a>，并安装
+                                                                class="material-icons">save_alt</i>点击下载SSTap</a>，并安装
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
                                                     期间会安装虚拟网卡，请点击允许或确认</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span> 打开桌面程序SSTap</p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>
+                                                    打开桌面程序SSTap</p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>
                                                     齿轮图标-SSR订阅-SSR订阅管理添加以下订阅链接即可</p>
                                                 <p><span class="icon icon-lg text-white">filter_5</span>
