@@ -87,7 +87,7 @@
                                             <p><img src="/images/Windows_4.png">></img></p>
                                             <li>右键任务栏小飞机，服务器，编辑服务器，删除<code>Free</code>字样线路，点击<code>确定</code></li>
                                             <p><img src="/images/Windows_5.png">></img></p>
-                                            <li>右键任务栏小飞机，服务器连接统计，点击节点名称进行选择，选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示）</li>
+                                            <li>右键任务栏小飞机，服务器连接统计，点击节点名称进行选择，选择一个 <code>Group</code> 为 <code>{$config["appName"]}</code>的节点（非流量提示以及到期日期提示）</li>
                                             <li>访问 <a href="https://www.google.com" target="_blank">Google</a>（若 <code>延迟</code>无数字显示且均为<code>错误/超时/空连</code>，选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>），能正常访问即可</li>
                                         </ol>
                                     </ul>
@@ -150,7 +150,7 @@
                                     <p><img src="/images/c_ios_1.jpg"/></p>
                                     <p>2：打开App Store 切换账号，并下载App</p>
                                     <p><img src="/images/c_ios_2.jpg"/></p>
-                                    <p>3：打开Safari，登录到 {$config["appName"]} 的用户中心导入节点</p>
+                                    <p>3：打开Safari，登录到 <code>{$config["appName"]}</code> 的用户中心导入节点</p>
                                     <p><img src="/images/c_ios_3.jpg"/></p>
                                     <p>附加：iOS快速连接</p>
                                     <p><img src="/images/c_ios_4.jpg"/></p>
