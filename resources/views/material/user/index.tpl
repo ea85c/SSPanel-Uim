@@ -959,7 +959,7 @@
                                                     <br></div>
                                             </div>
                                             <div class="tab-pane fade" id="all_v2ray_ios">
-                                                <p><span class="icon icon-lg text-white">filter_1</span> 在非国区AppStore中搜索<code class="card-tag tag-red">Shadowrocket</code>下载安装
+                                                <p><span class="icon icon-lg text-white">filter_1</span> 在非国区AppStore中搜索<code>Shadowrocket</code>下载安装
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span> 打开
                                                     Shadowrocket，点击右上角的<code>+</code>号，类型选择“Subscribe”，URL填写以下地址并点击右上角完成即可。或使用<a
@@ -1055,7 +1055,7 @@
                                         <dt>等级有效期</dt>
                                         <i class="icon icon-md">event</i>
                                         <span class="label-level-expire">剩余</span>
-                                        <code class="card-tag tag-red"><span id="days-level-expire"></span></code>
+                                        <code><span id="days-level-expire"></span></code>
                                         <span class="label-level-expire">天</span>
                                     </p>
 
@@ -1067,7 +1067,7 @@
                                         <dt>账号有效期</dt>
                                         <i class="icon icon-md">event</i>
                                         <span class="label-account-expire">剩余</span>
-                                        <code class="card-tag tag-red"><span id="days-account-expire"></span></code>
+                                        <code><span id="days-account-expire"></span></code>
                                         <span class="label-account-expire">天</span>
                                     </p>
 

@@ -52,56 +52,44 @@
                                             <li>下载软件</li>
                                         </h3>
                                         <ol>
-                                            <li>点击左侧用户中心(手机需先点左上角按钮调出导航菜单)</li>
+                                            <li>点击左侧用户中心（手机需先点左上角按钮调出导航菜单）</li>
                                             <li>找到快速添加节点</li>
                                             <li>点击下载客户端</li>
-                                            <p><img src="/images/c_win_1.png"/></p>
+                                            <p><img src="/images/Windows_1.png"/></p>
                                         </ol>
                                     </ul>
                                     <ul>
                                         <h3>
-                                            <li>导入节点</li>
+                                            <li>配置客户端</li>
                                         </h3>
-                                        <ul>
-                                            <li>
-                                                解压客户端，双击shadowsocksr4.0的客户端(打不开就用2.0，2.0打不开请下载安装net.framework3.0，还打不开麻烦升级到win7)
-                                            </li>
-                                            <li>方法一：</li>
-                                            <ol>
-                                                <li>在快速添加节点中找到【备用节点导入方法】</li>
-                                                <li>点击其中的链接</li>
-                                                <p><img src="/images/c_win_2.png"/></p>
-                                                <li>找到系统托盘菜单中的SSR纸飞机图标右键调出菜单</li>
-                                                <li>点击剪贴板批量导入ssr://链接</li>
-                                                <p><img src="/images/c_win_3.png"/></p>
-                                            </ol>
-                                            <li>方法二(推荐)：</li>
+                                        <li>解压客户端，<code>以管理员身份运行 ShadowsocksR.exe</code></li>
+                                        <li>右键任务栏小飞机，选项设置，如图配置</li>
+                                        <p><img src="/images/Windows_2.png"/></p>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>订阅节点</li>
+                                        </h3>
                                             <ol>
                                                 <li>在快速添加节点中找到节点订阅地址</li>
-                                                <li>点击按钮复制订阅链接</li>
-                                                <p><img src="/images/c_win_4.png"/></p>
-                                                <li>找到系统托盘菜单中的SSR纸飞机图标右键调出菜单</li>
-                                                <li>打开SSR服务器订阅链接设置</li>
-                                                <p><img src="/images/c_win_5.png"/></p>
-                                                <li>点击add添加一个订阅，将复制的链接填入右侧框内点击确定</li>
-                                                <p><img src="/images/c_win_6.png"/></p>
-                                                <li>找到系统托盘菜单中的SSR纸飞机图标右键调出菜单</li>
-                                                <li>点击更新SSR服务器订阅(不通过代理)</li>
-                                                <p><img src="/images/c_win_7.png"/></p>
+                                                <li>点击按钮复制订阅链接 <a  class="copy-text btn-dl" data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">点击复制订阅地址</a></li>
+                                                <li>右键任务栏小飞机，服务器订阅，SSR服务器订阅设置，如图配置</li>
+                                                <p><img src="/images/Windows_3.png"/></p>
+                                                <li>右键任务栏小飞机，，服务器订阅，更新SSR服务器订阅，提示服务器订阅<code>{$config["appName"]}</code>更新成功</li>
                                             </ol>
-                                        </ul>
                                     </ul>
                                     <ul>
                                         <h3>
-                                            <li>选择节点</li>
+                                            <li>选择可用节点</li>
                                         </h3>
                                         <ol>
-                                            <li>找到系统托盘菜单中的SSR纸飞机图标右键调出菜单</li>
-                                            <li>服务器->找到对应本站的节点组->选择一个节点单击</li>
-                                            <p><img src="/images/c_win_8.png"/></p>
-                                            <li>打开浏览器输入www.google.com试试吧！</li>
+                                            <li>右键任务栏小飞机，系统代理模式，选择<code>全局模式</code></li>
+                                            <p><img src="/images/Windows_4.png">></img></p>
+                                            <li>右键任务栏小飞机，服务器，编辑服务器，删除<code>Free</code>字样线路，点击<code>确定</code></li>
+                                            <p><img src="/images/Windows_5.png">></img></p>
+                                            <li>右键任务栏小飞机，服务器连接统计，点击节点名称进行选择，选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示）</li>
+                                            <li>访问 <a href="https://www.google.com" target="_blank">Google</a>（若 <code>延迟</code>无数字显示且均为<code>错误/超时/空连</code>，选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>），能正常访问即可</li>
                                         </ol>
-                                        <ul>以上教程均为电脑没有安装过任何代理软件的步骤，如果安装过其他代理软件可能产生冲突</ul>
                                     </ul>
                                 </div>
 
