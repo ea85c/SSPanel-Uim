@@ -238,7 +238,7 @@
                                                             class="btn-dl" href="/ssr-download/ssr-win.7z"><i
                                                                 class="material-icons">save_alt</i> 点击下载SSRR</a>解压至任意磁盘并 <code class="card-tag tag-red">以管理员身份运行</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
-                                                    任务栏右下角右键纸飞机图标->选项设置->取消勾选负载均衡，负载均衡选择 <code class="card-tag tag-red">选中优先</cpde>，勾选 <code class="card-tag tag-red">允许来自局域网的连接</code>，点击 <code class="card-tag tag-red">Set Default</code>，DNS设置为 <code class="card-tag tag-red">8.8.8.8</code>，Local DNS设置为<code class="card-tag tag-red">8.8.4.4</code>，点击 <code class="card-tag tag-red">确定</code></p>
+                                                    任务栏右下角右键纸飞机图标->选项设置->取消勾选负载均衡，负载均衡选择 <code class="card-tag tag-red">选中优先</code>，勾选 <code class="card-tag tag-red">允许来自局域网的连接</code>，点击 <code class="card-tag tag-red">Set Default</code>，DNS设置为 <code class="card-tag tag-red">8.8.8.8</code>，Local DNS设置为<code class="card-tag tag-red">8.8.4.4</code>，点击 <code class="card-tag tag-red">确定</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>
                                                     任务栏右下角右键纸飞机图标->服务器订阅->SSR服务器订阅设置->勾选 <code class="card-tag tag-red">自动更新</code>->点击 <code class="card-tag tag-red">Add</code>->网址中粘贴订阅链接
                                                     <a  class="copy-text btn-dl"
