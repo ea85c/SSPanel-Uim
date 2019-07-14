@@ -114,7 +114,7 @@
                                 <div class="nodemiddle node-flex">
                                     <div class="nodetype">
                                         {if $user->node_speedlimit!=0}
-                                            <dd><code>{$user->node_speedlimit}</code>Mbps</dd>
+                                            <dd><code class="card-tag tag-red">{$user->node_speedlimit}</code>Mbps</dd>
                                         {else}
                                             <dd>无限制</dd>
                                         {/if}
@@ -238,16 +238,16 @@
                                                             class="btn-dl" href="/ssr-download/ssr-win.7z"><i
                                                                 class="material-icons">save_alt</i> 点击下载SSRR</a>解压至任意磁盘并 <code class="card-tag tag-red">以管理员身份运行</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
-                                                    任务栏右下角右键纸飞机图标->选项设置->取消勾选负载均衡，负载均衡选择 <code>选中优先</cpde>，勾选 <code>允许来自局域网的连接</code>，点击 <code>Set Default</code>，DNS设置为 <code>8.8.8.8</code>，Local DNS设置为<code>8.8.4.4</code>，点击 <code>确定</code></p>
+                                                    任务栏右下角右键纸飞机图标->选项设置->取消勾选负载均衡，负载均衡选择 <code class="card-tag tag-red">选中优先</cpde>，勾选 <code class="card-tag tag-red">允许来自局域网的连接</code>，点击 <code class="card-tag tag-red">Set Default</code>，DNS设置为 <code class="card-tag tag-red">8.8.8.8</code>，Local DNS设置为<code class="card-tag tag-red">8.8.4.4</code>，点击 <code class="card-tag tag-red">确定</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>
-                                                    任务栏右下角右键纸飞机图标->服务器订阅->SSR服务器订阅设置->勾选 <code>自动更新</code>->点击 <code>Add</code>->网址中粘贴订阅链接
+                                                    任务栏右下角右键纸飞机图标->服务器订阅->SSR服务器订阅设置->勾选 <code class="card-tag tag-red">自动更新</code>->点击 <code class="card-tag tag-red">Add</code>->网址中粘贴订阅链接
                                                     <a  class="copy-text btn-dl"
                                                         data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
-                                                        点击复制订阅地址</a>->点击 <code>确定</code>->服务器订阅->更新SSR服务器订阅->提示服务器订阅{$config["appName"]}更新成功</p>
+                                                        点击复制订阅地址</a>->点击 <code class="card-tag tag-red">确定</code>->服务器订阅->更新SSR服务器订阅->提示服务器订阅{$config["appName"]}更新成功</p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>
-                                                    任务栏右下角右键纸飞机图标->系统代理模式->勾选<code>全局模式</code>->服务器->编辑服务器->删除 <code>Free</code> 字样线路，点击<code>确定</code>->服务器连接统计->选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示）->访问 <a href="https://www.google.com" target="_blank">Google</a>->若 <code>延迟</code> 有显示数字，Gooele能正常访问->恭喜可以正常使用->若 <code>延迟</code> 无数字显示->均为 <code>错误/超时/空连</code>->选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>->直到正常访问为止</p>
+                                                    任务栏右下角右键纸飞机图标->系统代理模式->勾选<code class="card-tag tag-red">全局模式</code>->服务器->编辑服务器->删除 <code class="card-tag tag-red">Free</code> 字样线路，点击<code class="card-tag tag-red">确定</code>->服务器连接统计->选择一个 Group 为 {$config["appName"]} 的节点（非流量提示以及到期日期提示）->访问 <a href="https://www.google.com" target="_blank">Google</a>->若 <code class="card-tag tag-red">延迟</code> 有显示数字，Gooele能正常访问->恭喜可以正常使用->若 <code class="card-tag tag-red">延迟</code> 无数字显示->均为 <code class="card-tag tag-red">错误/超时/空连</code>->选择另一条线路，继续访问 <a href="https://www.google.com" target="_blank">Google</a>->直到正常访问为止</p>
                                                  <p><span class="icon icon-lg text-white">filter_5</span>
-                                                    任务栏右下角右键纸飞机图标->PAC->更新PAC为GFWList->系统代理模式->勾选<code>PAC模式</code></p>
+                                                    任务栏右下角右键纸飞机图标->PAC->更新PAC为GFWList->系统代理模式->勾选<code class="card-tag tag-red">PAC模式</code></p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}
                                                     订阅地址：
@@ -300,8 +300,8 @@
                                                     右击托盘纸飞机图标->服务器->服务器订阅，填入订阅地址
                                                     <a  class="copy-text btn-dl"
                                                         data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
-                                                        点击复制订阅地址</a>->点击 <code>OK</code>->点击 <code>手动更新订阅</code>->更新订阅成功</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>选择 <code>PAC自动模式</code>->服务器列表中选择{$config["appName"]}中的一个节点（非流量提示以及到期日期提示），开始起飞</p></p>
+                                                        点击复制订阅地址</a>->点击 <code class="card-tag tag-red">OK</code>->点击 <code class="card-tag tag-red">手动更新订阅</code>->更新订阅成功</p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>选择 <code class="card-tag tag-red">PAC自动模式</code>->服务器列表中选择{$config["appName"]}中的一个节点（非流量提示以及到期日期提示），开始起飞</p></p>
                                                 <div>
                                                     <span class="icon icon-lg text-white">flash_auto</span> {if $mergeSub!='true'}普通节点{/if}
                                                     订阅地址：
@@ -411,7 +411,7 @@
                                                         <br/>
                                                     {else}
                                                         <p class="card-heading" align="center"><b>
-                                                                <i class="icon icon-lg">visibility_off</i>等级至少为<code>{$display_ios_class}</code>且累计充值大于<code>{$display_ios_topup}</code>时可见，如需升级请<a
+                                                                <i class="icon icon-lg">visibility_off</i>等级至少为<code class="card-tag tag-red">{$display_ios_class}</code>且累计充值大于<code class="card-tag tag-red">{$display_ios_topup}</code>时可见，如需升级请<a
                                                                         href="/user/shop">点击这里</a>升级套餐
                                                             </b></p>
                                                     {/if}
@@ -419,7 +419,7 @@
                                                 <p><span class="icon icon-lg text-white">build</span> 工具一：Shadowrocket
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_1</span> 使用共享账户登录 App
-                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Shadowrocket</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
+                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code class="card-tag tag-red">Shadowrocket</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
                                                     打开Shadowrocket，点击右上角的 +
                                                     号，“类型”选择“Subscribe”->复制订阅地址<a  class="copy-text btn-dl"
@@ -433,12 +433,12 @@
                                                            style="margin-left: 5px;" data-onekeyfor="sub1"><i
                                                                     class="material-icons icon-sm">how_to_vote</i>小火箭一键单端口订阅</a>
                                                     {/if}</p>
-                                                <p><span class="icon icon-lg text-white">filter_3</span>点击 <code>设置（位于右下角）</code>->选择 <code>服务器订阅设置</code>->勾选 <code>打开自动更新</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_3</span>点击 <code class="card-tag tag-red">设置（位于右下角）</code>->选择 <code class="card-tag tag-red">服务器订阅设置</code>->勾选 <code class="card-tag tag-red">打开自动更新</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>
-                                                    点击 <code>延迟检测</code>->选择一个非超时的线路->打开上方的连接开关即可（同意创建VPN）</p>
+                                                    点击 <code class="card-tag tag-red">延迟检测</code>->选择一个非超时的线路->打开上方的连接开关即可（同意创建VPN）</p>
                                                 <p><span class="icon icon-lg text-white">build</span> 工具二：Quantumult</p>
                                                 <p><span class="icon icon-lg text-white">filter_1</span> 使用共享账户登录 App
-                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Quantumult</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
+                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code class="card-tag tag-red">Quantumult</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
                                                     点击下方的“设置”，点击“订阅”，点击右上角的 +
                                                     号，选择“服务器”，“名称”任意填写，点击复制本网页下方的“订阅地址”，粘贴到“链接”中，点击右上角的“保存”</p>
@@ -496,9 +496,9 @@
                                                         data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
                                                         点击复制订阅地址</a></p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>订阅出现FreeSSR-public与{$config["appName"]}->右滑删除FreeSSR-public订阅</p>
-                                                <p><span class="icon icon-lg text-white">filter_5</span>勾选 <code>自动更新</code>->点击确定</p>
-                                                <p><span class="icon icon-lg text-white">filter_6</span>点击选择任意节点->返回主界面->路由->选择 <code>略过区域网路以及中国大陆</code> 或 <code>仅代理大陆无法访问地址</code></p>
-                                                <p><span class="icon icon-lg text-white">filter_7</span>若您需要进行游戏加速->打开 <code>UDP转发</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_5</span>勾选 <code class="card-tag tag-red">自动更新</code>->点击确定</p>
+                                                <p><span class="icon icon-lg text-white">filter_6</span>点击选择任意节点->返回主界面->路由->选择 <code class="card-tag tag-red">略过区域网路以及中国大陆</code> 或 <code class="card-tag tag-red">仅代理大陆无法访问地址</code></p>
+                                                <p><span class="icon icon-lg text-white">filter_7</span>若您需要进行游戏加速->打开 <code class="card-tag tag-red">UDP转发</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_8</span>点击右上角的纸飞机图标即可连接</p>
                                                 <p><span class="icon icon-lg text-white">filter_</span>小米手机请关闭自带的 迅雷加速 服务，由于本站审计规则会自动匹配迅雷并拦截，开启迅 迅雷加速 会导致不能下载及更新软件 </a>
                                                 <p><span class="icon icon-lg text-white">filter_9</span>
@@ -652,7 +652,7 @@
                                                 {if URL::SSRCanConnect($user)}
                                                     <dl class="dl-horizontal">
                                                         <p>
-                                                            <dt><code>优先导入普通端口，如果普通端口无法使用再导入单端口</code></dt>
+                                                            <dt><code class="card-tag tag-red">优先导入普通端口，如果普通端口无法使用再导入单端口</code></dt>
                                                         </p>
                                                         <p>
                                                             <dt>端口</dt>
@@ -828,7 +828,7 @@
                                                         <br/>
                                                     {else}
                                                         <p class="card-heading" align="center"><b>
-                                                                <i class="icon icon-lg">visibility_off</i>等级至少为<code>{$display_ios_class}</code>且累计充值大于<code>{$display_ios_topup}</code>时可见，如需升级请<a
+                                                                <i class="icon icon-lg">visibility_off</i>等级至少为<code class="card-tag tag-red">{$display_ios_class}</code>且累计充值大于<code class="card-tag tag-red">{$display_ios_topup}</code>时可见，如需升级请<a
                                                                         href="/user/shop">点击这里</a>升级套餐。
                                                             </b></p>
                                                     {/if}
@@ -836,14 +836,14 @@
                                                 <p><span class="icon icon-lg text-white">build</span> 工具一：Shadowrocket
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_1</span> 使用共享账户登录 App
-                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Shadowrocket</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
+                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code class="card-tag tag-red">Shadowrocket</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
                                                 <p><span class="icon icon-lg text-white">filter_2</span> 打开<a
                                                             href="/user/node">节点列表</a>，点开自己需要的节点详情，点击配置链接导入节点</p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>
                                                     选择一个节点，打开上方的连接开关即可</p>
                                                 <p><span class="icon icon-lg text-white">build</span> 工具二：Quantumult</p>
                                                 <p><span class="icon icon-lg text-white">filter_1</span> 使用共享账户登录 App
-                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code>Quantumult</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
+                                                    Store （请勿在“设置”界面直接登录AppleID），搜索并下载<code class="card-tag tag-red">Quantumult</code>，期间可能会弹出付款，照做即可，不会产生真实扣费
                                                 <p><span class="icon icon-lg text-white">filter_2</span> 打开<a
                                                             href="/user/node">节点列表</a>，点开自己需要的节点详情，点击配置链接导入节点</p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span> 点击 Quantumult
@@ -954,7 +954,7 @@
                                                     <br></div>
                                             </div>
                                             <div class="tab-pane fade" id="all_v2ray_ios">
-                                                <p><span class="icon icon-lg text-white">filter_1</span> 在非国区AppStore中搜索<code>Shadowrocket</code>下载安装
+                                                <p><span class="icon icon-lg text-white">filter_1</span> 在非国区AppStore中搜索<code class="card-tag tag-red">Shadowrocket</code>下载安装
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span> 打开
                                                     Shadowrocket，点击右上角的 + 号，类型选择“Subscribe”，URL填写以下地址并点击右上角完成即可。或使用<a
@@ -1050,7 +1050,7 @@
                                         <dt>等级有效期</dt>
                                         <i class="icon icon-md">event</i>
                                         <span class="label-level-expire">剩余</span>
-                                        <code><span id="days-level-expire"></span></code>
+                                        <code class="card-tag tag-red"><span id="days-level-expire"></span></code>
                                         <span class="label-level-expire">天</span>
                                     </p>
 
@@ -1062,7 +1062,7 @@
                                         <dt>账号有效期</dt>
                                         <i class="icon icon-md">event</i>
                                         <span class="label-account-expire">剩余</span>
-                                        <code><span id="days-account-expire"></span></code>
+                                        <code class="card-tag tag-red"><span id="days-account-expire"></span></code>
                                         <span class="label-account-expire">天</span>
                                     </p>
 
