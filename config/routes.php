@@ -76,7 +76,6 @@ $app->group('/user', function () {
     $this->get('/tutorial', App\Controllers\UserController::class . ':tutorial');
     $this->get('/announcement', App\Controllers\UserController::class . ':announcement');
     $this->get('/donate', App\Controllers\UserController::class . ':donate');
-    $this->get('/lookingglass', App\Controllers\UserController::class . ':lookingglass');
     $this->get('/node/{id}', App\Controllers\UserController::class . ':nodeInfo');
     $this->get('/node/{id}/ajax', App\Controllers\UserController::class . ':nodeAjax');
     $this->get('/profile', App\Controllers\UserController::class . ':profile');
