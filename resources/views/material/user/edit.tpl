@@ -66,7 +66,7 @@
                     </div>
                 </div>
 
-
+                {if $user->isadmin()}
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
@@ -98,6 +98,7 @@
                         </div>
                     </div>
                 </div>
+                {/if}
 
                 <div class="card margin-bottom-no">
                     <div class="card-main">
@@ -163,7 +164,7 @@
                     </div>
                 </div>
 
-
+                {if $user->isadmin()}
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
@@ -229,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-
+                {/if}
 
                 <div class="card margin-bottom-no">
                     <div class="card-main">
