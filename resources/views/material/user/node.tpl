@@ -245,6 +245,38 @@
                                                         {if $node['sort'] == 10}
                                                             {$relay_rule = $tools->pick_out_relay_rule($node['id'], $user->port, $relay_rules)}
                                                         {/if}
+                                                                    {if $node['mu_only'] != 1 && ($node['sort'] != 11 || $node['sort']!=12)}
+                                                                                {$node['name']}
+                                                                                {if $relay_rule != null} - {$relay_rule->dist_node()->name}{/if}</a>
+
+                                                                    {elseif $node['sort'] == 11|| $node['sort']==12}
+                                                                        {displayNodeLinkV2 node=$node}
+                                                                        {$point_node=$node}
+                                                                    {/if}
+
+                                                                    {if $node['sort'] == 0 || $node['sort'] == 10||$node['sort']==13}
+                                                                        {$point_node=$node}
+                                                                    {/if}
+
+                                                                    {if ($node['sort'] == 0 || $node['sort'] == 10) && $node['mu_only'] != -1}
+                                                                        {foreach $nodes_muport as $single_muport}
+
+                                                                            {if !($single_muport['server']->node_class <= $user->class && ($single_muport['server']->node_group == 0 || $single_muport['server']->node_group == $user->node_group))}
+                                                                                {continue}
+                                                                            {/if}
+
+                                                                            {if !($single_muport['user']->class >= $node['class'] && ($node['group'] == 0 || $single_muport['user']->node_group == $node['group']))}
+                                                                                {continue}
+                                                                            {/if}
+
+                                                                            {$relay_rule = null}
+
+                                                                            {if $node['sort'] == 10 && $single_muport['user']['is_multi_user'] != 2}
+                                                                                {$relay_rule = $tools->pick_out_relay_rule($node['id'], $single_muport['server']->server, $relay_rules)}
+                                                                            {/if}
+
+                                                                        {/foreach}
+                                                                    {/if}
                                                         {if $node['sort'] == 11 ||$node['sort']==12}
                                                                         {displayV2rayNode node=$node}
                                                                     {/if}
