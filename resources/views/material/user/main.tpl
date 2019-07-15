@@ -161,11 +161,13 @@
 
 
                         {if $config['enable_donate']=='true'}
+                            {if $user->isadmin()}
                             <li>
                                 <a href="/user/donate">
                                     <i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
                                 </a>
                             </li>
+                            {/if}
                         {/if}
 
                     </ul>
