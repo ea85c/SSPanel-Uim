@@ -157,21 +157,54 @@
                                 </div>
 
                                 <div class="tab-pane fade page-course" id="all_ssr_android">
-                                    <p>1：下载app</p>
-                                    <p><img src="/images/c_android_1.jpg"/></p>
-                                    <p>2：添加订阅并更新</p>
-                                    <p><img src="/images/c_android_2.jpg"/></p>
-                                    <p><img src="/images/c_android_3.jpg"/></p>
-                                    <p><img src="/images/c_android_4.jpg"/></p>
-                                    <p><img src="/images/c_android_5.jpg"/></p>
-                                    <p>3：选择一个节点并设置路由</p>
-                                    <p><img src="/images/c_android_6.jpg"/></p>
-                                    <p><img src="/images/c_android_7.jpg"/></p>
-                                    <p>4：连接</p>
-                                    <p><img src="/images/c_android_8.jpg"/></p>
-                                    <p>注释：国产安卓系统为定制系统，如需要Youtube、Google套件等，需要安装Google框架，具体机型如何安装各不相同，请直接查找教程</p>
+                                  <ul>
+                                        <h3>
+                                            <li>下载App（SSR/SSRR 均可）</li>
+                                        </h3>
+                                        <ol>
+                                            <li>点击左侧用户中心（手机需先点左上角按钮调出导航菜单）</li>
+                                            <li>找到快速添加节点</li>
+                                            <li>点击下载客户端</li>
+                                            <p><img src="/images/Android_1.png"/></p>
+                                        </ol>
+                                    </ul>
+                                  <ul>
+                                        <h3>
+                                            <li>添加订阅并更新</li>
+                                        </h3>
+                                        <ol>
+                                            <li>打开App，点击左上角的<code>ShadowsocksR</code>进入管理后台</li>
+                                            <p><img src="/images/Android_2.png"/></p>
+                                            <li>点击右下角的<span>add</span>号图标，添加/升级 SSR订阅</li>
+                                            <p><img src="/images/Android_3.png"/></p>
+                                            <li>添加订阅地址，勾选<code>自动更新</code>，右滑删除<code>FreeSSR-public</code>，点击<code>添加订阅地址</code></li>
+                                            <p><img src="/images/Android_4.png"/></p>
+                                            <li>输入订阅地址后确定<a  class="copy-text btn-dl" data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
+                                                        点击复制订阅地址</a></li>
+                                            <p><img src="/images/Android_5.png"/></p>
+                                            <li>订阅出现<code>{$config["appName"]}</code>，点击<code>确定</code></li>
+                                            <p><img src="/images/Android_6.png"/></p>
+                                        </ol>
+                                    </ul>
+                                  <ul>
+                                        <h3>
+                                            <li>选择一个节点并设置路由</li>
+                                        </h3>
+                                        <ol>
+                                            <li>点击选择任意节点，点击右方闪电形状测试节点是否可用（可用下方将显示测试延迟），返回主界面</li>
+                                            <p><img src="/images/Android_7.png"/></p>
+                                            <p><img src="/images/Android_11.png"/></p>
+                                            <li>主界面下滑，路由，选择<code>略过区域网路以及中国大陆</code> 或 <code>仅代理大陆无法访问地址</code></li>
+                                            <li>若您需要进行游戏加速，打开<code>UDP转发</code></li>
+                                            <p><img src="/images/Android_8.png"/></p>
+                                            <li>点击右上角的纸飞机图标即可连接（同意设置VPN连接）</li>
+                                            <p><img src="/images/Android_9.png"/></p>
+                                            <li>访问 <a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                                            <p><img src="/images/Android_10.png"/></p> 
+                                        </ol>
+                                    </ul>
                                 </div>
-
+                                
                                 <div class="tab-pane fade" id="all_ssr_router">
                                     <h2 class="major">路由器</h2>
                                 </div>
