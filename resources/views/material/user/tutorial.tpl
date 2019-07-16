@@ -146,14 +146,57 @@
                                 </div>
 
                                 <div class="tab-pane fade page-course" id="all_ssr_ios">
-                                    <p>1：前往用户中心查看App Store账号，国区App Store已下架)</p>
-                                    <p><img src="/images/c_ios_1.jpg"/></p>
-                                    <p>2：打开App Store 切换账号，并下载App</p>
-                                    <p><img src="/images/c_ios_2.jpg"/></p>
-                                    <p>3：打开Safari，登录到 <code>{$config["appName"]}</code> 的用户中心导入节点</p>
-                                    <p><img src="/images/c_ios_3.jpg"/></p>
-                                    <p>附加：iOS快速连接</p>
-                                    <p><img src="/images/c_ios_4.jpg"/></p>
+                                    <ul>
+                                        <h3>
+                                            <li>切换非国区App Store账号</li>
+                                        </h3>
+                                            <ol>
+                                                <li>打开App Store，点击右上角的<code>头像</code>进入用户中心</li>
+                                                <p><img src="/images/IOS_1.png"/></p>
+                                                <li>点击<code>退出</code>并且登陆非国区Apple ID</li>
+                                                <p><img src="/images/IOS_2.png"/></p>
+                                            </ol>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>安装<code>Shadowrocket</code></li>
+                                        </h3>
+                                            <ol>
+                                                <li>搜索并安装<code>Shadowrocket</code>（期间可能会弹出付款，照做即可，不会产生真实扣费），请耐心等待下载和安装</li>
+                                                <p><img src="/images/IOS_3.png"/></p>
+                                            </ol>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>小火箭一键订阅</li>
+                                        </h3>
+                                            <ol>
+                                                <li>使用<code>Safari</code>打开网站，点击<code>小火箭一键订阅</code>，点击<code>打开</code></li>
+                                                <p><img src="/images/IOS_4.png"/></p>
+                                                <li>等待节点更新完成</li>
+                                                <p><img src="/images/IOS_5.png"/></p>
+                                            </ol>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>配置自动更新</li>
+                                        </h3>
+                                            <ol>
+                                                <li>点击 <code>设置（位于右下角）</code>，选择<code>服务器订阅设置</code></li>
+                                                <p><img src="/images/IOS_6.png"/></p>
+                                                <li>勾选 <code>打开自动更新</code></li>
+                                                <p><img src="/images/IOS_7.png"/></p>
+                                            </ol>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>选择节点并起飞</li>
+                                        </h3>
+                                            <ol>
+                                                <li>点击<code>延迟检测</code>，选择一个非超时的线路，打开上方的<code>连接开关</code>即可（同意创建VPN）</li>
+                                                <p><img src="/images/IOS_8.png"/></p>
+                                            </ol>
+                                    </ul>
                                 </div>
 
                                 <div class="tab-pane fade page-course" id="all_ssr_android">
@@ -199,6 +242,13 @@
                                             <p><img src="/images/Android_8.png"/></p>
                                             <li>点击右上角的纸飞机图标即可连接（同意设置VPN连接）</li>
                                             <p><img src="/images/Android_9.png"/></p>
+                                        </ol>
+                                    </ul>
+                                    <ul>
+                                        <h3>
+                                            <li>起飞</li>
+                                        </h3>
+                                        <ol>
                                             <li>访问 <a href="https://www.youtube.com" target="_blank">YouTube</a></li>
                                             <p><img src="/images/Android_10.png"/></p> 
                                         </ol>
