@@ -496,7 +496,7 @@
                                                                 class="material-icons">save_alt</i> SSR </a> 或 <a
                                                             href="/ssr-download/ssrr-android.apk" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i> SSRR </a> 并安装</p>
-                                                <p><span class="icon icon-lg text-white">filter_2</span>打开App，点击左上角的<code>ShadowsocksR</code>进入管理后台，点击右下角的<span>add</span>号图标</p>
+                                                <p><span class="icon icon-lg text-white">filter_2</span>打开App，点击左上角的<code>ShadowsocksR</code>进入管理后台，点击右下角的<code>+</code>号</p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>添加/升级 SSR订阅，添加订阅地址，输入订阅地址后确定<a  class="copy-text btn-dl" data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
                                                         点击复制订阅地址</a></p>
                                                 <p><span class="icon icon-lg text-white">filter_4</span>订阅出现<code>FreeSSR-public</code>与<code>{$config["appName"]}</code>，右滑删除<code>FreeSSR-public</code></p>
