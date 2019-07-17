@@ -138,13 +138,15 @@
                             </a>
                         </li>
 
+                    <a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
+                        <ul class="menu-collapse collapse in" id="ui_menu_detect">
+                            <li><a href="/user/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
+                            <li><a href="/user/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
+                        </ul>
+                        
                         <li><a href="/user/bought"><i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a></li>
 
-                    <a class="waves-attach" data-toggle="collapse" href="#ui_menu_detect">审计</a>
-                            <ul class="menu-collapse collapse in" id="ui_menu_detect">
-                                <li><a href="/user/detect"><i class="icon icon-lg">account_balance</i>&nbsp;审计规则</a></li>
-                                <li><a href="/user/detect/log"><i class="icon icon-lg">assignment_late</i>&nbsp;审计记录</a></li>
-                            </ul>
+                    
 
                         {if $config['enable_donate']=='true'}
                             {if $user->isadmin()}
