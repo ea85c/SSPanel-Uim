@@ -78,7 +78,6 @@ $app->group('/user', function () {
     $this->get('/donate', App\Controllers\UserController::class . ':donate');
     $this->get('/node/{id}', App\Controllers\UserController::class . ':nodeInfo');
     $this->get('/node/{id}/ajax', App\Controllers\UserController::class . ':nodeAjax');
-    $this->get('/profile', App\Controllers\UserController::class . ':profile');
     $this->get('/invite', App\Controllers\UserController::class . ':invite');
 
     $this->get('/detect', App\Controllers\UserController::class . ':detect_index');

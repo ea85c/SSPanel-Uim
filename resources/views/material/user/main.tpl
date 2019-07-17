@@ -76,11 +76,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="/user/profile">
-                                <i class="icon icon-lg">account_box</i>&nbsp;账户信息
-                            </a>
-                        </li>
 
                         <li>
                             <a href="/user/edit">
