@@ -83,11 +83,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="/user/trafficlog">
-                                <i class="icon icon-lg">hourglass_empty</i>&nbsp;流量记录
-                            </a>
-                        </li>
 
                         {if $config['enable_ticket']=='true'}
                             <li>
