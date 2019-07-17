@@ -1,5 +1,6 @@
 ﻿{include file='user/main.tpl'}
 
+{if $user->isadmin()}
 <script src="//cdn.jsdelivr.net/gh/SuicidalCat/canvasjs.js@v2.3.1/canvasjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1"></script>
 <script type="application/x-javascript"> addEventListener("load", function () {
@@ -332,7 +333,7 @@
 
 
 {include file='user/footer.tpl'}
-
+{/if}
 
 <script>
 

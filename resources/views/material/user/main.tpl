@@ -102,12 +102,13 @@
 
                     <a class="waves-attach" data-toggle="collapse" href="#ui_menu_use">使用</a>
                     <ul class="menu-collapse collapse in" id="ui_menu_use">
+                        {if $user->isadmin()}
                         <li>
                             <a href="/user/node">
                                 <i class="icon icon-lg">airplanemode_active</i>&nbsp;节点列表
                             </a>
                         </li>
-
+                        {/if}
 
                         <li>
                             <a href="/user/announcement">
