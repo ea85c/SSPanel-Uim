@@ -11,6 +11,29 @@
 
 
             <div class="col-xx-12 col-sm-6">
+                    <div class="card margin-bottom-no">
+                        <div class="card-main">
+                            <div class="card-inner">
+                                <div class="card-inner">
+                                    {if $config['enable_kill']=="true"}
+                                        <div class="cardbtn-edit">
+                                            <div class="card-heading">我的帐号</div>
+                                            <div class="account-flex"><span>注销账号</span><a class="btn btn-flat"
+                                                                                          href="kill"><span
+                                                            class="icon">not_interested</span>&nbsp;</a></div>
+                                        </div>
+                                    {/if}
+                                    <dl class="dl-horizontal">
+                                        <dt>用户名</dt>
+                                        <dd>{$user->user_name}</dd>
+                                        <dt>邮箱</dt>
+                                        <dd>{$user->email}</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 <div class="card margin-bottom-no">
                     <div class="card-main">
                         <div class="card-inner">
