@@ -1,6 +1,6 @@
 {include file='user/main.tpl'}
 
-
+{if $user->isadmin()}
 <main class="content">
     <div class="content-header ui-content-header">
         <div class="container">
@@ -119,3 +119,4 @@
 
 
 {include file='user/footer.tpl'}
+{/if}
