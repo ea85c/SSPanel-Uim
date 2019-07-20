@@ -235,7 +235,7 @@
                                                 {$ssr_url_all = URL::getAllUrl($pre_user, 0, 0)}
                                                 {$ssr_url_all_mu = URL::getAllUrl($pre_user, 1, 0)}
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
-                                                            class="btn-dl" href="/ssr-download/ssr-win.7z"><i
+                                                            class="btn-dl" href="https://github.com/Anankke/SSRR-Windows/releases/download/5.1.5/ShadowsocksR-win-5.1.5.7z"><i
                                                                 class="material-icons">save_alt</i> 点击下载SSRR</a>解压至任意磁盘并 <code>以管理员身份运行</code></p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
                                                     右键任务栏小飞机，选项设置，<code>取消负载均衡</code>，负载均衡选择<code>选中优先</code>，勾选<code>允许来自局域网的链接</code>，点击<code>Set Default</code>，DNS设置为<code>8.8.8.8</code>，Local DNS设置为<code>8.8.4.4</code></p>
@@ -295,7 +295,7 @@
                                             </div>
                                             <div class="tab-pane fade" id="all_ssr_mac">
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
-                                                            href="/ssr-download/ssr-mac.dmg" class="btn-dl"><i
+                                                            href="https://github.com/VeniZ/ShadowsocksX-NG-R8-Bakup/raw/master/ShadowsocksX-NG-R8.dmg" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i>
                                                         点击下载ShadowsocksX-NG-R8</a>，安装并启动（如提示不安全，到设置，打开安全与隐私，选择左下角的小锁，输入开机密码，选择任何来源和允许来自任何来源）</p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
@@ -492,10 +492,10 @@
                                             </div>
                                             <div class="tab-pane fade" id="all_ssr_android">
                                                 <p><span class="icon icon-lg text-white">filter_1</span>点击下载<a
-                                                            href="/ssr-download/ssr-android.apk" class="btn-dl"><i
+                                                            href="https://github.com/shadowsocksr-backup/shadowsocksr-android/releases/download/3.4.0.8/shadowsocksr-release.apk" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i> SSR </a> 或 <a
-                                                            href="/ssr-download/ssrr-android.apk" class="btn-dl"><i
-                                                                class="material-icons">save_alt</i> SSRR </a> 并安装</p>
+                                                            href="https://github.com/shadowsocksrr/shadowsocksr-android/releases/download/3.5.4/shadowsocksr-android-3.5.4.apk" class="btn-dl"><i
+                                                                class="material-icons">save_alt</i> SSRR（推荐） </a> 并安装</p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>打开App，点击左上角的<code>ShadowsocksR</code>进入管理后台，点击右下角的<code>+</code>号</p>
                                                 <p><span class="icon icon-lg text-white">filter_3</span>添加/升级 SSR订阅，添加订阅地址，输入订阅地址后确定<a  class="copy-text btn-dl" data-clipboard-text="{$subUrl}{$ssr_sub_token}{if $mergeSub!='true'}?mu=0{/if}">
                                                         点击复制订阅地址</a></p>
@@ -603,7 +603,7 @@
                                             </div>
                                             <div class="tab-pane fade" id="all_ssr_game">
                                                 <p><span class="icon icon-lg text-white">filter_1</span><a
-                                                            href="/ssr-download/SSTap.7z" class="btn-dl"><i
+                                                            href="https://github.com/githello123/sstap/raw/master/SSTap-beta-setup-1.0.9.7.exe.7z" class="btn-dl"><i
                                                                 class="material-icons">save_alt</i>点击下载SSTap</a>，并安装
                                                 </p>
                                                 <p><span class="icon icon-lg text-white">filter_2</span>
