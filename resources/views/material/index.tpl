@@ -371,9 +371,9 @@
                     <div class="col-md-10 col-lg-6 text-center text-md-left margins">
                         <div class="white-text">
                             <div class="wow fadeInLeft" data-wow-delay="0.3s">
-                                <h1 class="h1-responsive font-bold mt-sm-5">标题</h1>
+                                <h1 class="h1-responsive font-bold mt-sm-5">Touch the world</h1>
                                 <div class="h6" style="text-transform:none">
-                                    简介
+                                    Here is everything you want!
                                 </div>
                             </div><br>
                             <div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="/auth/register"><i class="material-icons">person_add</i>注册</a><a class="btn btn-outline-white waves-effect waves-light" href="/auth/login"><i class="material-icons">fingerprint</i>登陆<div class="ripple-container"></div></a></div>
