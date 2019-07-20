@@ -346,17 +346,17 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
                         <a href="/">
-                            <i class="material-icons">dashboard</i> 首页
+                            <i class="material-icons">Home</i> 首页
                         </a>
                     </li>
                     <li class="">
                         <a href="/auth/register">
-                            <i class="material-icons">person_add</i> 注册
+                            <i class="material-icons">Sign up</i> 注册
                         </a>
                     </li>
                     <li class="">
                         <a href="/auth/login">
-                            <i class="material-icons">fingerprint</i> 登录
+                            <i class="material-icons">Log in</i> 登录
                         </a>
                     </li>
                 </ul>
@@ -389,7 +389,7 @@
     <section class="py-5" id="projects">
         <div class="container">
             <div class="wow fadeIn">
-                <h2 class="text-center h1 my-4">合作关系</h2>
+                <h2 class="text-center h1 my-4">Partnership</h2>
                 <p class="px-5 mb-5 pb-3 lead blue-grey-text text-center">
                 </p>
             </div>
