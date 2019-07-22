@@ -376,7 +376,7 @@
                                     Here is everything you want!
                                 </div>
                             </div><br>
-                            <div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="/auth/register"><i class="material-icons">person_add</i>注册</a><a class="btn btn-outline-white waves-effect waves-light" href="/auth/login"><i class="material-icons">fingerprint</i>登陆<div class="ripple-container"></div></a></div>
+                            <div class="wow fadeInLeft" data-wow-delay="0.3s"><a class="btn btn-white dark-grey-text font-bold ml-0" href="/auth/register"><i class="material-icons">person_add</i>Sign up</a><a class="btn btn-outline-white waves-effect waves-light" href="/auth/login"><i class="material-icons">fingerprint</i>Log in<div class="ripple-container"></div></a></div>
                         </div>
                     </div>
                 </div>
