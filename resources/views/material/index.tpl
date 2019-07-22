@@ -346,17 +346,17 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active">
                         <a href="/">
-                            <i class="material-icons">Home</i> 首页
+                            <i class="material-icons">dashboard</i> Home
                         </a>
                     </li>
                     <li class="">
                         <a href="/auth/register">
-                            <i class="material-icons">Sign up</i> 注册
+                            <i class="material-icons">person_add</i> Sign up
                         </a>
                     </li>
                     <li class="">
                         <a href="/auth/login">
-                            <i class="material-icons">Log in</i> 登录
+                            <i class="material-icons">fingerprint</i> Log in
                         </a>
                     </li>
                 </ul>
