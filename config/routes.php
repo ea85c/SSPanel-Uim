@@ -96,7 +96,7 @@ $app->group('/user', function () {
     $this->get('/relay/{id}/edit', App\Controllers\RelayController::class . ':edit');
     $this->put('/relay/{id}', App\Controllers\RelayController::class . ':update');
     $this->delete('/relay', App\Controllers\RelayController::class . ':delete');
-
+    $this->get('/profile', 'App\Controllers\UserController:profile');
     $this->get('/ticket', App\Controllers\UserController::class . ':ticket');
     $this->get('/ticket/create', App\Controllers\UserController::class . ':ticket_create');
     $this->post('/ticket', App\Controllers\UserController::class . ':ticket_add');
