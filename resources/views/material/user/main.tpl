@@ -111,16 +111,13 @@
                                 <i class="icon icon-lg">airplanemode_active</i>&nbsp;节点列表
                             </a>
                         </li>
-<<<<<<< HEAD
                         {/if}
-=======
 
                         <li>
                             <a href="/user/relay">
                                 <i class="icon icon-lg">compare_arrows</i>&nbsp;中转规则
                             </a>
                         </li>
->>>>>>> parent of f2a8d83c... Update main.tpl
 
                         <li>
                             <a href="/user/announcement">
